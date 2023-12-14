@@ -11,7 +11,8 @@ from astropy.time import Time
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
-from poliastro.core.stumpff import c2, c3
+from poliastro._math.special import stumpff_c2 as c2
+from poliastro._math.special import stumpff_c3 as c3
 from astropy.coordinates.earth_orientation import obliquity
 from astropy.coordinates.matrix_utilities import rotation_matrix
 import argparse
